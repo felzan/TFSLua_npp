@@ -19,3 +19,7 @@ Configurações>Configurador de estilos > **Seleciona**: a linguagem Lua > **Ins
 
 ####Depois
 ![DEPOIS](http://i.imgur.com/Bl4W8Tk.png)
+
+#####Notas
+Os Highlight estão divididos, podem ser inseridor em dois estilos ou no mesmo estilo.
+Mais **palavras chave** podem ser inseridas, farei um wiki de como inserir.
