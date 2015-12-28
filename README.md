@@ -15,7 +15,7 @@ Configurações>Configurador de estilos > **Seleciona**: a linguagem Lua > **Ins
 
 
 ####Antes
-[[http://i.imgur.com/GylKG1K.png|alt=ANTES]]
+![ANTES](http://i.imgur.com/GylKG1K.png)
 
 ####Depois
-[[http://i.imgur.com/Bl4W8Tk.png|alt=DEPOIS]]
+![DEPOIS](http://i.imgur.com/Bl4W8Tk.png)
