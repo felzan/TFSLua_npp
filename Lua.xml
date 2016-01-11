@@ -2,1495 +2,3764 @@
 <NotepadPlus>
 	<AutoComplete language="Lua">
 		<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," additionalWordChar=""/>
-		<KeyWord name="addDamageCondition" func="yes">
+		<KeyWord name="broadcastMessage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="message"/>
+				<Param name="messageType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="canJoin" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="canPlayerLearnInstantSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="canPlayerWearOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="lookType"/>
+				<Param name="addons"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="combat:closeShopWindow" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Combat:execute" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="variant"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Combat:setArea" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="area"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Combat:setCallback" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+				<Param name="function"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Combat:setCondition" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="condition"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Combat:setFormula" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="type"/>
+				<Param name="mina"/>
+				<Param name="minb"/>
+				<Param name="maxa"/>
+				<Param name="maxb"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Combat:setOrigin" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="origin"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Combat:setParameter" func="yes">
+			<Overload retVal="" descr="">
 				<Param name="key"/>
+				<Param name="value"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:addDamage" func="yes">
+			<Overload retVal="" descr="">
 				<Param name="rounds"/>
 				<Param name="time"/>
 				<Param name="value"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="addOutfitCondition" func="yes" >
+		<KeyWord name="Condition:clone" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="condition"/>
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:getEndTime" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:getIcons" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:getSubId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:getTicks" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:getType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:setFormula" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="mina"/>
+				<Param name="minb"/>
+				<Param name="maxa"/>
+				<Param name="maxb"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:setOutfit" func="yes">
+			<Overload retVal="" descr="">
 				<Param name="lookTypeEx"/>
 				<Param name="lookType"/>
 				<Param name="lookHead"/>
 				<Param name="lookBody"/>
 				<Param name="lookLegs"/>
 				<Param name="lookFeet"/>
+				<Param name="[lookAddons"/>
+				<Param name="[lookMount"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="broadcastMessage" func="yes" >
+		<KeyWord name="Condition:setParameter" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+				<Param name="value"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Condition:setTicks" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="ticks"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Container:addItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="[count"/>
+				<Param name="[index"/>
+				<Param name="[flags"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Container:addItemEx" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="[index"/>
+				<Param name="[flags"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Container:getCapacity" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="canPlayerLearnInstantSpell" func="yes" >
+		<KeyWord name="Container:getEmptySlots" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="[recursive = false"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Container:getItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="index"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Container:getItemCountById" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="[subType =-1"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Container:getItemHoldingCount" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="canPlayerWearOutfit" func="yes" >
+		<KeyWord name="Container:getSize" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="convertIpToString" func="yes" >
+		<KeyWord name="Container:hasItem" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="item"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="createCombatArea" func="yes" >
+		<KeyWord name="creature:addCondition" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="{area}"/>
-				<Param name="{extArea}"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="createCombatObject" func="yes" >
-			<Overload retVal="" descr="">
-			</Overload>
-		</KeyWord>
-		<KeyWord name="createConditionObject" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="type"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doAddContainerItem " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="itemid"/>
-				<Param name="count or subtype"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doAddContainerItemEx" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doAddMapMark" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doAreaCombatCondition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="pos"/>
-				<Param name="area"/>
 				<Param name="condition"/>
-				<Param name="affect"/>
+				<Param name="[force = false"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doAreaCombatDispel" func="yes" >
+		<KeyWord name="creature:addHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="healthChange"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:addMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="manaChange"/>
+				<Param name="[animationOnLoss = false"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:canSee" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:canSeeCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:changeSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="delta"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getBaseSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getCondition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="conditionType"/>
+				<Param name="[conditionId"/>
+				<Param name="[subId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getDamageMap" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getDescription" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="distance"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getDirection" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getFollowCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getId" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
-				<Param name="pos"/>
-				<Param name="area"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getMaster" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getMaxHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getMaxMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getParent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getPathTo" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+				<Param name="[minTargetDist = 0"/>
+				<Param name="[maxTargetDist = 1"/>
+				<Param name="[fullPathSearch = true"/>
+				<Param name="clearSight = true"/>
+				<Param name="maxSearchDist = 0"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getSkull" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getSummons" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:getTile" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:isCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:isHealthHidden" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:isInGhostMode" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:isRemoved" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:registerEvent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:remove" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:removeCondition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="conditionType"/>
+				<Param name="[conditionId"/>
+				<Param name="[subId"/>
+				<Param name="[force = false"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:say" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="text"/>
 				<Param name="type"/>
-				<Param name="effect"/>
+				<Param name="[ghost = false"/>
+				<Param name="[target = nil"/>
+				<Param name="[position"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doAreaCombatHealth" func="yes" >
+		<KeyWord name="creature:setDirection" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="type"/>
-				<Param name="pos"/>
-				<Param name="area"/>
-				<Param name="min"/>
-				<Param name="max"/>
-				<Param name="effect"/>
+				<Param name="direction"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doAreaCombatMana" func="yes" >
+		<KeyWord name="creature:setDropLoot" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="pos"/>
-				<Param name="area"/>
-				<Param name="min"/>
-				<Param name="max"/>
-				<Param name="effect"/>
+				<Param name="doDrop"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doChallengeCreature" func="yes" >
+		<KeyWord name="creature:setFollowCreature" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="cid"/>
+				<Param name="followedCreature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:setHiddenHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="hide"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:setLight" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="color"/>
+				<Param name="level"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:setMaster" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="master"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:setMaxHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="masHealth"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:setOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="outfit"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:setSkull" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skull"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:setTarget" func="yes">
+			<Overload retVal="" descr="">
 				<Param name="target"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doChangeSpeed" func="yes" >
+		<KeyWord name="creature:teleportTo" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+				<Param name="[pushMovement = false"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="creature:unregisterEvent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doAddCondition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="conditionId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doAddContainerItemEx" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="virtualId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doAddMapMark" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="position"/>
+				<Param name="type"/>
+				<Param name="description"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doChangeSpeed" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="delta"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doChangeTypeItem" func="yes" >
+		<KeyWord name="doChangeTypeItem" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="new_type"/>
+				<Param name="uid"/>
+				<Param name="newType"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doCombat" func="yes" >
+		<KeyWord name="doCombat" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="combat"/>
-				<Param name="param"/>
+				<Param name="var"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doConvinceCreature" func="yes" >
+		<KeyWord name="doConvinceCreature" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="target"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doCreateItem" func="yes" >
+		<KeyWord name="doCreateNpc" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="itemid"/>
-				<Param name="type or count"/>
+				<Param name="name"/>
+				<Param name="position"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doCreateTeleport" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="destination"/>
 				<Param name="position"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doCreateNpc" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doCreateTeleport" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doCreatureAddHealth" func="yes" >
+		<KeyWord name="doCreatureAddHealth" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="health"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doCreatureChangeOutfit" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doCreatureSay" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doCreatureSayWithRadius" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doCreatureSetLookDir" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doCreatureSetLookDir" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doDecayItem" func="yes" >
+		<KeyWord name="doCreatureChangeOutfit" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
+				<Param name="outfit"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doForceSummonCreature" func="yes" >
+		<KeyWord name="doCreatureSay" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="cid"/>
+				<Param name="text"/>
+				<Param name="type"/>
+				<Param name="..."/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doMonsterChangeTarget" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doMoveCreature" func="yes" >
+		<KeyWord name="doCreatureSetLookDir" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="direction"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerAddAddon " func="yes" >
+		<KeyWord name="doDecayItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doMonsterChangeTarget" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
-				<Param name="lookType"/>
-				<Param name="addon"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerAddBlessing" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerAddExp" func="yes" >
+		<KeyWord name="doNpcSetCreatureFocus" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
-				<Param name="exp"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerAddHealth" func="yes" >
+		<KeyWord name="doPlayerAddBlessing" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
-				<Param name="health"/>
+				<Param name="blessing"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerAddItem" func="yes" >
+		<KeyWord name="doPlayerAddExp" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
-				<Param name="itemid"/>
-				<Param name="count or type"/>
+				<Param name="experience"/>
+				<Param name="useMultiplier"/>
+				<Param name="..."/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerAddItemEx" func="yes" >
+		<KeyWord name="doPlayerAddItemEx" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="cid"/>
+				<Param name="uid"/>
+				<Param name="..."/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerAddMana" func="yes" >
+		<KeyWord name="doPlayerAddMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="mana"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerAddManaSpent" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="mana"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerAddManaSpent" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerAddMoney" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerAddMount" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerAddOutfit" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerAddPremiumDays" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerAddSkillTry" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="skillid"/>
-				<Param name="tries"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerAddSoul" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="soul"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerFeed" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="food"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerJoinParty" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerMoney" func="yes" >
+		<KeyWord name="doPlayerAddMoney" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="money"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerPopupFYI" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerRemOutfit" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerRemoveItem" func="yes" >
+		<KeyWord name="doPlayerAddMount" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
-				<Param name="itemid"/>
-				<Param name="count"/>
+				<Param name="mountId"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="doPlayerRemoveMoney" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerRemoveMount" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerRemovePremiumDays" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSay " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="text"/>
-				<Param name="type"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSendCancel" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="text"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSendDefaultCancel" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="ReturnValue"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSendTextMessage" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="MessageClasses"/>
-				<Param name="message"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSetBalance" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSetGuildLevel" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSetGuildNick" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSetMasterPos" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="pos"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSetSex" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSetTown" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="townid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doPlayerSetVocation" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="vocation"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doRelocate" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doRemoveCreature" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doRemoveItem" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-				<Param name="n"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSendAnimatedText" func="yes" >
-			<Overload retVal="" descr="DECRAPTED">
-				<Param name="position"/>
-				<Param name="text"/>
-				<Param name="color"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSendDistanceShoot" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSendMagicEffect" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="position"/>
-				<Param name="type"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSendTutorial" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetCreatureDirection" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetCreatureDropLoot" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetCreatureLight " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="lightLevel"/>
-				<Param name="lightColor"/>
-				<Param name="time"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetCreatureOutfit" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="outfit"/>
-				<Param name="time"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetItemActionId" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-				<Param name="actionid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetItemOutfit" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="item"/>
-				<Param name="time"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetItemSpecialDescription" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-				<Param name="desc"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetItemText " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-				<Param name="text"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetMonsterOutfit " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="name"/>
-				<Param name="time"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSetMonsterTarget" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doShowTextDialog" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="itemid"/>
-				<Param name="text"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doShowTextWindow" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="maxlen"/>
-				<Param name="canWrite"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doSummonCreature" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="name"/>
-				<Param name="position"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doTargetCombatCondition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="target"/>
-				<Param name="condition"/>
-				<Param name="effects"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doTargetCombatDispel" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="target"/>
-				<Param name="type"/>
-				<Param name="effect"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doTargetCombatHealth" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="target"/>
-				<Param name="type"/>
-				<Param name="min"/>
-				<Param name="max"/>
-				<Param name="effect"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doTargetCombatMana" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="target"/>
-				<Param name="min"/>
-				<Param name="max"/>
-				<Param name="effect"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doTeleportThing" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="newpos"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="doTransformItem" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-				<Param name="toitemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="foodCondition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getAccountNumberByPlayerName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getBlessingsCost" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getClosestFreePosition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getConfigInfo" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getContainerCap " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getContainerCapById" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getContainerItem " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-				<Param name="slot"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getContainerSize " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureBaseSpeed" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureHealth" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureMaster" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureMaxHealth" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureOutfit" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreaturePos" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreaturePosition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureSpeed" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureSummons" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getCreatureTarget" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getDistanceBetween" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getFlcidSourceType" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getGlobalStorageValue " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="valueid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getGuildId" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseAccessList " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-				<Param name="listid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseByPlayerGcid" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseByPlayerName " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="playername"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseEntry " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseName " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseOwner " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseRent " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseTilesSize" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getHouseTown " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getIpByName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getIPByPlayerName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getItemDescriptions" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getItemIdByName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getItemName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="itemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getItemRWInfo " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="uid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getItemStackable " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getItemWeight" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getItemWeightBycid" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getMonsterFriendList" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getMonsterTargetList" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getNextPosition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getOnlinePlayers" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPartyMembers" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerAccess " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerAccountBalance" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerAccountType" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerBalance" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerBlessing" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerByName " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="playername"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerConditionTicks " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="conditionid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerDepotItems" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="depositid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerFood" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerFreeCap" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGroupId" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGcid" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGcidByName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGuildId" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGuildLevel" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGuildName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGuildNick" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerGuildRank" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerHealth" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerIp" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerItemById" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerItemCount " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-				<Param name="itemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerLastLoginSaved" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerLearnedInstantSpell" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerLevel" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerLight " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerLookDir" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerLossPercent" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerMagLevel " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerMana " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerMasterPos" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerMaxMana" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerMoney" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerMount" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerOutfitAddon " func="yes" >
+		<KeyWord name="doPlayerAddOutfit" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="lookType"/>
+				<Param name="addons"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerParty" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerPosition" func="yes" >
+		<KeyWord name="doPlayerAddPremiumDays" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
+				<Param name="days"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerPremiumDays" func="yes" >
+		<KeyWord name="doPlayerAddSkillTry" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
+				<Param name="skillId"/>
+				<Param name="n"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayersByAccountNumber" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayersByIPAddress" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerSex " func="yes" >
+		<KeyWord name="doPlayerAddSoul" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
+				<Param name="soul"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerSkill" func="yes" >
+		<KeyWord name="doPlayerFeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="food"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerGroupId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="groupId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerJoinParty" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="leaderId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerPopupFYI" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="message"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerRemOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="lookType"/>
+				<Param name="addons"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerRemoveItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="itemId"/>
+				<Param name="count"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerRemoveMoney" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="money"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerRemoveMount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="mountId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerRemovePremiumDays" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="days"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSendCancel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSendTextMessage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="type"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSetBalance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="balance"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSetGuildLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="level"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSetGuildNick" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="nick"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSetOfflineTrainingSkill" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="skillid"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerSkull " func="yes" >
+		<KeyWord name="doPlayerSetSex" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="sex"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSetTown" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="town"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doPlayerSetVocation" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="vocation"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doRelocate" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="fromPos"/>
+				<Param name="toPos"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doRemoveCondition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="conditionType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doRemoveCreature" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerSkullType" func="yes" >
+		<KeyWord name="doRemoveItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="uid"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSellItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="itemId"/>
+				<Param name="amount"/>
+				<Param name="subtype"/>
+				<Param name="actionId"/>
+				<Param name="canDropOnMap"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSendAnimatedText" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerSlotItem" func="yes" >
+		<KeyWord name="doSendDistanceShoot" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="fromPos"/>
+				<Param name="toPos"/>
+				<Param name="distanceEffect"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSendMagicEffect" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+				<Param name="magicEffect"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSendTutorial" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="tutorialId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSetCreatureDropLoot" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="doDrop"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSetItemActionId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="actionId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSetItemSpecialDescription" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="description"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSetItemText" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSetMonsterTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="target"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doShowTextDialog" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="itemId"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doSummonCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+				<Param name="position"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doTeleportThing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="destination"/>
+				<Param name="pushMovement"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doTransformItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="newItemId"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getAccountNumberByPlaynerName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getConfigInfo" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="info"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getContainerCap" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getContainerCapById" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getContainerItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="slot"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getContainerSize" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureBaseSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureMaster" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureMaxHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreaturePosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureSummons" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCreatureTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDistanceBetween" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="firstPosition"/>
+				<Param name="secondPosition"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDistanceTo" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getFluidSourceType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getFormattedWorldTime" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getGlobalStorageValue" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getGuildId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="guildName"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseAccessList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+				<Param name="listId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseByPlayerGUID" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+				<Param name="listId"/>
+				<Param name="listText"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseEntry" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="houseId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="houseId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseOwner" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="houseId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseRent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseTilesSize" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="houseId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHouseTown" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="houseId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getIPBtPlayerName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getItemByName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getItemDescription" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getItemName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getItemRWInfo" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getItemWeight" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getItemWeightByUID" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getMonsterFriendList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getMonsterTargetList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getNpcCid" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getNpcParameter" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="parameterKey"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getOnlinePlayers" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPartyMembers" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerAccess" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerAccountType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerBalance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerBlessing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="blessing"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerByIPAddress" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="ip"/>
+				<Param name="mask"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerByName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerDepotItems" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="depotId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerFood" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerFreeCap" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGroupId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGUID" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGUIDName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGuildId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGuildLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGuildName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGuildNick" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerGuildRank" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerIp" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerItemById" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="deepSearch"/>
+				<Param name="itemId"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerItemCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="itemId"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerLastLoginSaved" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerLearnedInstantSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerLEvel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerLight" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerLookDir" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerLossPercent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayermaglevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerMasterPos" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerMaxMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerMoney" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerMount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="mountId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerParty" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerPremiumDays" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayersByAccountNumber" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="accountNumber"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerSex" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerSkill" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="skillId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerSkullType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPlayerSlotItem" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 				<Param name="slot"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerSoul " func="yes" >
+		<KeyWord name="getPlayerSoul" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerStorageValue " func="yes" >
+		<KeyWord name="getPlayerStorageValue" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
-				<Param name="valueid"/>
+				<Param name="key"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPlayerTown " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPlayerVocation" func="yes" >
+		<KeyWord name="getPlayerTown" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getPromotedVocation" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getPvpBlessingCost" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getReverseDirection" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getSkillType" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getSpectators" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getStorageValue" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getThing" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getThingfromPos " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="pos"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getThingPos " func="yes" >
+		<KeyWord name="getPlayerVocation" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="cid"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getTibianTime" func="yes" >
+		<KeyWord name="getPromotedVocation" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="vocationId"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getTileHouseInfo" func="yes" >
+		<KeyWord name="getSpectators" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="pos"/>
+				<Param name="centerPos"/>
+				<Param name="rangex"/>
+				<Param name="rangey"/>
+				<Param name="multifloor"/>
+				<Param name="onlyPlayers"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="getTileInfo" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTileItemById" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTileItemByType" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTilePzInfo" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="pos"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTileThingByPos" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTileThingByTopOrder" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTopCreature" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTownId" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTownName" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getTownTemplePosition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getWorldCreatures" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="type"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getWorldLight" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getWorldTime" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getWorldType" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="getWorldUpTime" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="globalStorageTable" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isContainer" func="yes" >
+		<KeyWord name="getThing" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="uid"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isCorpse" func="yes" >
+		<KeyWord name="getThingfromPos" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="pos"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isCreature " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isDrcid" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isInRange" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isItem" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isItemContainer" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="itemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isItemDoor" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="itemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isItemFlcidContainer" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="itemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isItemMoveable" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isItemRune" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="itemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isItemStackable" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="itemid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isKnight" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isMonster" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="isMoveable " func="yes" >
+		<KeyWord name="getThingPos" func="yes">
 			<Overload retVal="" descr="">
 				<Param name="uid"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isNpc" func="yes" >
+		<KeyWord name="getTileHouseInfo" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="playerGUID"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isNumber" func="yes" >
+		<KeyWord name="getTileInfo" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="position"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isPaladin" func="yes" >
+		<KeyWord name="getTileItemById" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="position"/>
+				<Param name="itemId"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isPlayer " func="yes" >
+		<KeyWord name="getTileItemByType" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="cid"/>
+				<Param name="position"/>
+				<Param name="itemType"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isPlayerGhost" func="yes" >
+		<KeyWord name="getTilePzInfo" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="position"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isPlayerPzLocked" func="yes" >
+		<KeyWord name="getTileThingByPos" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="position"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isPremium" func="yes" >
+		<KeyWord name="getTileThingByTopOrder" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="position"/>
+				<Param name="topOrder"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isSightClear" func="yes" >
+		<KeyWord name="getTopCreature" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="position"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isSorcerer" func="yes" >
+		<KeyWord name="getTownId" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="townName"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="isSummon" func="yes" >
+		<KeyWord name="getTownName" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="townId"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="numberToVariant" func="yes" >
+		<KeyWord name="getTownTemplePosition" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
+				<Param name="townId"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="playerLearnInstantSpell" func="yes" >
+		<KeyWord name="getWorldCreatures" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="positionToVariant" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="pushThing" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="queryTileAddThing" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="registerCreature " func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="cid"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="registerCreatureEvent" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="saveData" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="saveServer" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="sendCancelMessage" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="setCombatArea" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="combat"/>
-				<Param name="area"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="setCombatCallBack" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="combat"/>
-				<Param name="key"/>
-				<Param name="function_name"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="setCombatCondition" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="combat"/>
-				<Param name="condition"/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="setCombatFormula" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name="combat"/>
 				<Param name="type"/>
-				<Param name="mina"/>
-				<Param name="minb"/>
-				<Param name="maxa"/>
-				<Param name="maxb"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setCombatParam" func="yes" >
+		<KeyWord name="Group:getAccess" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="combat"/>
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Group:getFlags" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Group:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Group:getMaxDepotItems" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Group:getMaxVipEntries" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Group:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:addRank" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+				<Param name="name"/>
+				<Param name="level"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:getMembersOnline" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:getMotd" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:getRankbyId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:getRankByLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="level"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild:setMotd" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="motd"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild.addMember" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="self"/>
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Guild.removeMember" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="self"/>
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hasProperty" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+				<Param name="property"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getAccessList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="listId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getBedCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getBeds" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getDoorCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getDoors" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getExitPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getOwnerGuid" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getRent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getTileCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getTiles" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:getTown" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:setAccessList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="listId"/>
+				<Param name="list"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="House:setOwnerGuid" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="guid"/>
+				<Param name="[updateDatabase = true"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isContainer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isCorpse" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="uid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isItemContainer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isItemDoor" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isItemFluidContainer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isItemMovable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isItemRune" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isItemStackable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isMonster" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isNpc" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isPlayer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isPlayerGhost" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isPlayerPzLocked" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isPremium" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isSightClear" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="fromPos"/>
+				<Param name="toPos"/>
+				<Param name="floorCheck"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isSummon" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:clone" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:decay" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getActionId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getArticle" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getAttribute" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getCharges" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getDescription" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="distance"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getFluidType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getParent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getPluralName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getSubType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getTile" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getTopParent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getUniqueId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:getWeight" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:hasAttribute" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:hasProperty" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="property"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:isItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:moveTo" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position or cylinder"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:remove" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="[count = -1"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:removeAttributeKey" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:setActionId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="actionId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Item:setAttributeKey" func="yes">
+			<Overload retVal="" descr="">
 				<Param name="key"/>
 				<Param name="value"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setConditionFormula " func="yes" >
+		<KeyWord name="Item:split" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="combat"/>
-				<Param name="mina"/>
-				<Param name="minb"/>
-				<Param name="maxa"/>
-				<Param name="maxb"/>
+				<Param name="[count = 1"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setConditionParam" func="yes" >
+		<KeyWord name="Item:transform" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="condition"/>
+				<Param name="itemId"/>
+				<Param name="[count = -1"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getArmor" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getArticle" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getAttack" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getCapacity" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getCharges" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getClientId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getDecayId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getDefense" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getDescription" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getDestroyId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getElementDamage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getElementType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getExtraDefense" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getFluidSource" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getHitChance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getPluralName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getRequiredLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getShootRange" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getSlotPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getTransformDeEquipId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getTransformEquipId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getWeaponType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:getWeight" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="[count = 1"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:hasSubType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isContainer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isCorpse" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isDoor" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isFluidContainer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isMovable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isReadable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isRune" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isStaclable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ItemType:isWritable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:addButton" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:addChoice" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:getButtonCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:getChoiceCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:getDefaultEnterButton" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:getDefaultEscapeButton" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:getMessage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:getTile" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:haspriority" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:sendToPlayer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:setDefaultEnterButton" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="buttonId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:setDefaultEscapeButton" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="buttonId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:setMessage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:setPriority" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="priority"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ModalWindow:setTitle" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:addFriend" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:addTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="[pushFront = false"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:getFriendCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:getFriendList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:getSpawnPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:getTargetCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:getTargetList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:getType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:isFriend" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:isIdle" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:isInSpawnRange" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="[position]"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:isMonster" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:isOpponent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:isTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:removeFriend" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:removeTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:searchTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="[searchType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:selectTarget" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Monster:setIdle" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="idle"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:canPushCreatures" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:canPushItems" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getArmor" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getAttackList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getBaseSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getChangeTargetChance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getChangeTargetSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getCombatImmunities" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getConditionImmunities" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getCorpseId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getCreatureEvents" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getDefense" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getDefenseList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getElementsList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getExperience" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getLight" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getLoot" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getManaCost" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getMaxMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getMaxSummons" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getNameDescription" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getRace" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getRunHealth" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getStaticAttackChance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getSummonList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getTargetDistance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getVoices" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getYellChannel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:getYellSpeedTicks" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:isAttackable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:isConvinceable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:isHealthShown" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:isHostile" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:isIllusionable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:isPushable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="MonsterType:isSummonable" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addByte" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="number"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addDouble" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="number"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="item"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addItemId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addString" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="string"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addU16" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="number"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addU32" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="number"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:addU64" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="number"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:getByte" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:getPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:getString" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:getU16" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:getU32" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:getU64" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:reset" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:sendToPlayer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="NetworkMessage:skipBytes" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="number"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Npc:getSpeechBubble" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Npc:isNpc" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Npc:setMasterPos" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+				<Param name="[radius"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Npc:setSpeechBubble" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="speechBubble"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onAddItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="item"/>
+				<Param name="tileItem"/>
+				<Param name="position"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onAdvance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="skill"/>
+				<Param name="oldLevel"/>
+				<Param name="newLevel"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCastSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="var"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureAppear" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="isLogin"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureAppear" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="isLogin"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureDisappear" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="isLogout"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureDisappear" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="isLogout"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureMove" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="newTile"/>
+				<Param name="newPosition"/>
+				<Param name="oldTile"/>
+				<Param name="oldPosition"/>
+				<Param name="teleport"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureMove" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="newTile"/>
+				<Param name="newPosition"/>
+				<Param name="oldTile"/>
+				<Param name="oldPosition"/>
+				<Param name="teleport"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureSay" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="type"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onCreatureSay" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="type"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onDeath" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="corpse"/>
+				<Param name="lasthitkiller"/>
+				<Param name="mostdamagekiller"/>
+				<Param name="lasthitunjustified"/>
+				<Param name="mostdamageunjustified"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onDeEquip" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="item"/>
+				<Param name="tileItem"/>
+				<Param name="position"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onEquip" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="item"/>
+				<Param name="slot"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onExtendedOpcode" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="opcode"/>
+				<Param name="buffer"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onHealthChange" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="attacker"/>
+				<Param name="primaryDamage"/>
+				<Param name="primaryType"/>
+				<Param name="secondaryDamage"/>
+				<Param name="secondaryType"/>
+				<Param name="origin"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onJoin" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onKill" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="target"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onLeave" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onLogin" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onLogout" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onManaChange" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="attacker"/>
+				<Param name="manaChange"/>
+				<Param name="origin"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onModalWindow" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="modalWindowId"/>
+				<Param name="buttonId"/>
+				<Param name="choiseId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onPlayerCloseChannel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onPlayerEndTrade" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="callback"/>
+				<Param name="itemId"/>
+				<Param name="count"/>
+				<Param name="amount"/>
+				<Param name="ignore"/>
+				<Param name="inBackpacks"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onPrepareDeath" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="killer"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onRaid" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onRecord" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="current"/>
+				<Param name="old"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onRemoveItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="item"/>
+				<Param name="slot"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onSay" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="words"/>
+				<Param name="param"/>
+				<Param name="type"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onShutdown" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onSpeak" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="type"/>
+				<Param name="message"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onStartup" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onStepIn" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="item"/>
+				<Param name="position"/>
+				<Param name="fromPosition"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onStepOut" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="item"/>
+				<Param name="position"/>
+				<Param name="fromPosition"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onTextEdit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="item"/>
+				<Param name="text"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onThink" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+				<Param name="interval"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onThink" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="interval"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onThink" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="interval"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onTime" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onUse" func="yes">
+			<Overload retVal="" descr="Action function">
+				<Param name="player"/>
+				<Param name="item"/>
+				<Param name="fromPosition"/>
+				<Param name="target"/>
+				<Param name="toPosition"/>
+				<Param name="isHotkey"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="onUseWeapon" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+				<Param name="var"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="openShopWindow" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="items"/>
+				<Param name="onBuy"/>
+				<Param name="onSell"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:addInvite" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:addMember" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:disband" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:getInviteeCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:getInvitees" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:getLeader" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:getMemberCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:getMembers" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:isSharedExperienceActive" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:isSharedExperienceEnabled" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:removeInvite" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:removeMember" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:setLeader" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:setSharedExperience" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="active [true or false]"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Party:shareExperience" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="experience"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addBlessing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="blessing"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addExperience" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="experience"/>
+				<Param name="[sendText = false"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="[count"/>
+				<Param name="canDropOnMap"/>
+				<Param name="[subType"/>
+				<Param name="slot"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addItemEx" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="item"/>
+				<Param name="[canDropOnMap"/>
+				<Param name="[index or slot"/>
+				<Param name="[flags"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addManaSpent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="amount"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addMapMark" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+				<Param name="type"/>
+				<Param name="description"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addMoney" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="money"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addMount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="mountId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="lookType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addOutfitAddon" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="lookType"/>
+				<Param name="addon"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addPremiumDays" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="days"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addSkillTries" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skillType"/>
+				<Param name="tries"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:addSoul" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="soulChange"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:canLearnSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="spellName"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:channelSay" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="speaker"/>
+				<Param name="type"/>
+				<Param name="text"/>
+				<Param name="channelId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:forgetSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="spellName"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getAccountId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getAccountType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getBankBalance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getBaseMagicLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getCapacity" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getClient" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getContainerById" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getContainerId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="container"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getContainerIndex" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getDeathPenalty" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getDepotChest" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="depotId"/>
+				<Param name="[autoCreate = false"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getEffectiveSkillLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skillType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getExperience" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getFreeCapacity" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getGroup" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getGuid" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getGuild" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getGuildLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getGuildNick" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getHouse" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getInbox" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getIp" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getItemById" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="deepSearch"/>
+				<Param name="[subType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getItemCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="[subType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getLastLoginSaved" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getLastLogout" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getMagicLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getManaSpent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getMaxSoul" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getMoney" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getParty" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getPremiumDays" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getSex" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getSkillLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skillType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getSkillPercent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skillType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getSkillTries" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skillType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getSkullTime" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getSlotItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="slot"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getSoul" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getStamina" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getStorageValue" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getTown" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:getVocation" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:hasBlessing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="blessing"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:hasLearnedSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="spellName"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:hasMount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="mountId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:hasOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="lookType"/>
+				<Param name="[addon"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:isPlayer" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:isPzLocked" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:learnSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="spellName"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:openChannel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="channelId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:popupFYI" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="message"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removeBlessing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="blessing"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removeExperience" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="experience"/>
+				<Param name="sendText"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removeItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="count"/>
+				<Param name="[subType"/>
+				<Param name="[ignoreEquipped"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removeMoney" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="money"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removeMount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="mountId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removeOutfit" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="lookType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removeOutfitAddon" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="lookType"/>
+				<Param name="addon"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:removePremiumDays" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="days"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:save" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:sendChannelMessage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="author"/>
+				<Param name="text"/>
+				<Param name="type"/>
+				<Param name="channelId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:sendOutfitWindow" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:sendPrivateMessage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="speaker"/>
+				<Param name="text"/>
+				<Param name="[type"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:sendTextMessage" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="type"/>
+				<Param name="text"/>
+				<Param name="[position"/>
+				<Param name="primaryValue"/>
+				<Param name="primaryColor"/>
+				<Param name="secondaryValue"/>
+				<Param name="secondaryColor"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:sendTutorial" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="tutorialId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setAccountType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="accountType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setBankBalance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="bankBalance"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setCapacity" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="capacity"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setGhostMode" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="enabled"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setGroup" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="group"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setGuild" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="guild"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setGuildLevel" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="level"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setGuildNick" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="nick"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setMaxMana" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="maxMana"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setSex" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="newSex"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setSkullTime" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skullTime"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setStamina" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="stamina"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Player:setStorageValue" func="yes">
+			<Overload retVal="" descr="">
 				<Param name="key"/>
 				<Param name="value"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setGlobalStorageValue " func="yes" >
+		<KeyWord name="Player:setTown" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="valueid"/>
-				<Param name="newvalue"/>
+				<Param name="town"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setHouseAccessList" func="yes" >
+		<KeyWord name="Player:setVocation" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-				<Param name="listid"/>
-				<Param name="listtext"/>
+				<Param name="id or name"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setHouseOwner" func="yes" >
+		<KeyWord name="Player:showTextDialog" func="yes">
 			<Overload retVal="" descr="">
-				<Param name="houseid"/>
-				<Param name="ownername"/>
+				<Param name="itemId"/>
+				<Param name="[text"/>
+				<Param name="[canWrite"/>
+				<Param name="length"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setPlayerGroupId" func="yes" >
+		<KeyWord name="PlayerLearnInstantSpell" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Position:getDistance" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="positionEx"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Position:isSightClear" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="positionEx"/>
+				<Param name="[sameFloor = true"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Position:sendDistanceEffect" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="positionEx"/>
+				<Param name="distanceEffect"/>
+				<Param name="[player = nil"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Position:sendMagicEffect" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="magicEffect"/>
+				<Param name="[player = nil"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="queryTileAddThing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="thing"/>
+				<Param name="position"/>
+				<Param name="..."/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="registerCreatureEvent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selfFollow" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selfMove" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="direction"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selfMoveTo" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selfSay" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="words"/>
+				<Param name="player"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selfTurn" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="direction"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setGlobalStorageValue" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="key"/>
+				<Param name="value"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setHouseAccessList" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+				<Param name="listId"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setHouseOwner" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="id"/>
+				<Param name="guid"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setPlayerStorageValue" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="key"/>
+				<Param name="value"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="targetPositionToVariant" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="position"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Teleport:getDestination" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setPlayerStorageValue " func="yes" >
+		<KeyWord name="Teleport:setDestination" func="yes">
 			<Overload retVal="" descr="">
-				<Param name=""/>
-				<Param name=""/>
+				<Param name="position"/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="setStorageValue" func="yes" >
-			<Overload retVal="" descr="">
-				<Param name=""/>
-			</Overload>
-		</KeyWord>
-		<KeyWord name="stringToVariant" func="yes" >
+		<KeyWord name="Tile:getBottomCreature" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="targetPositionToVariant" func="yes" >
+		<KeyWord name="Tile:getBottomVisibleCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getCreatureCount" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="unregisterCreatureEvent" func="yes" >
+		<KeyWord name="Tile:getCreatures" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="variantToNumber" func="yes" >
+		<KeyWord name="Tile:getDownItemCount" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="variantToPosition" func="yes" >
+		<KeyWord name="Tile:getFieldItem" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
 		</KeyWord>
-		<KeyWord name="variantToString" func="yes" >
+		<KeyWord name="Tile:getGround" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getHouse" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getItemById" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="[subType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getItemByTopOrder" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="topOrder"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getItemByType" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getItemCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getitemCountById" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="itemId"/>
+				<Param name="[subType"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getItems" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getThing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="index"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getThingCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getThingIndex" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="thing"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getTopCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getTopDownItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getTopItemCount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getTopTopItem" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getTopVisibleCreature" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:getTopVisibleThing" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="creature"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:hasFlag" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="flag"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:hasProperty" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="property"/>
+				<Param name="[item"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Tile:queryAdd" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="thing"/>
+				<Param name="[flags"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Town:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Town:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Town:getTemplePosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="unregisterCreatureEvent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="cid"/>
+				<Param name="name"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Variant:getNumber" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Variant:getPosition" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Variant:getString" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getAttackSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getBaseSpeed" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getCapacityGain" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getClientId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getDemotion" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getDescription" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getHealthGain" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getHealthGainTicks" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getHelthGainAmount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getId" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getManaGain" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getManaGainAmount" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getManaGainTicks" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getMaxSoul" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getName" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getPromotion" func="yes">
+			<Overload retVal="" descr="">
+				<Param name=""/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getRequiredManaSpent" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="magicLevel"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getRequiredSkillTries" func="yes">
+			<Overload retVal="" descr="">
+				<Param name="skillType"/>
+				<Param name="skillLevel"/>
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Vocation:getSoulGainTicks" func="yes">
 			<Overload retVal="" descr="">
 				<Param name=""/>
 			</Overload>
@@ -2158,5 +4427,5 @@
 		<KeyWord name="WORLD_TYPE_NO_PVP" />
 		<KeyWord name="WORLD_TYPE_PVP" />
 		<KeyWord name="WORLD_TYPE_PVP_ENFORCED" />
-	</AutoComplete>
+		</AutoComplete>
 </NotepadPlus>
